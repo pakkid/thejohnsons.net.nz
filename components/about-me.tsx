@@ -13,12 +13,12 @@ export default function AboutMe() {
 
   // Replace with your information
   const personalInfo = {
-    name: "Your Name",
+    name: "Pak Kid",
     title: "Full Stack Developer",
-    location: "San Francisco, CA",
-    email: "your.email@example.com",
+    location: "Auckland, NZ",
+    email: "pakkid@mail.thejohnsons.net.nz",
     github: "pakkid",
-    linkedin: "yourlinkedin",
+    // linkedin: "yourlinkedin",
     bio: "Passionate developer with expertise in React, Next.js, and TypeScript. I love building user-friendly web applications and exploring new technologies.",
     skills: [
       "JavaScript",
@@ -82,7 +82,7 @@ export default function AboutMe() {
                     <span className="sr-only">GitHub</span>
                   </a>
                 </Button>
-                <Button variant="outline" size="icon" asChild>
+                {/*<Button variant="outline" size="icon" asChild>
                   <a
                     href={`https://linkedin.com/in/${personalInfo.linkedin}`}
                     target="_blank"
@@ -91,7 +91,7 @@ export default function AboutMe() {
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </a>
-                </Button>
+                </Button>*/}
                 <Button variant="outline" size="icon" asChild>
                   <a href={`mailto:${personalInfo.email}`}>
                     <Mail className="h-4 w-4" />
@@ -170,7 +170,7 @@ export default function AboutMe() {
                     <span className="sr-only">GitHub</span>
                   </a>
                 </Button>
-                <Button variant="outline" size="icon" asChild className="hover:scale-110 transition-transform">
+                {/*<Button variant="outline" size="icon" asChild className="hover:scale-110 transition-transform">
                   <a
                     href={`https://linkedin.com/in/${personalInfo.linkedin}`}
                     target="_blank"
@@ -179,7 +179,7 @@ export default function AboutMe() {
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </a>
-                </Button>
+                </Button>*/}
                 <Button variant="outline" size="icon" asChild className="hover:scale-110 transition-transform">
                   <a href={`mailto:${personalInfo.email}`}>
                     <Mail className="h-4 w-4" />

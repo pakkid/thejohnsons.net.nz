@@ -9,7 +9,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "GitHub Portfolio",
   description: "A showcase of my GitHub projects",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/user.png",
+    apple: "/user.png",
+    shortcut: "/user.png",
+  },
 }
 
 export default function RootLayout({
