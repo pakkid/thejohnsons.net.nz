@@ -61,7 +61,7 @@ export default function AboutMe() {
           <div className="aspect-square overflow-hidden md:aspect-auto md:h-full">
             <div className="flex h-full flex-col items-center justify-center bg-muted p-6 text-center">
               <Avatar className="h-32 w-32 mb-4">
-                <AvatarImage src="/placeholder.svg?height=128&width=128" alt={personalInfo.name} />
+                <AvatarImage src="/user.png?height=128&width=128" alt={personalInfo.name} />
                 <AvatarFallback>
                   {personalInfo.name
                     .split(" ")
@@ -144,7 +144,7 @@ export default function AboutMe() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Avatar className="h-32 w-32 mb-4 ring-4 ring-primary/20">
-                  <AvatarImage src="/placeholder.svg?height=128&width=128" alt={personalInfo.name} />
+                  <AvatarImage src="/user.png?height=128&width=128" alt={personalInfo.name} />
                   <AvatarFallback>
                     {personalInfo.name
                       .split(" ")
