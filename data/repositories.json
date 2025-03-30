@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "example-repository",
+    "full_name": "pakkid/example-repository",
+    "html_url": "https://github.com/pakkid/example-repository",
+    "description": "This is an example repository JSON file. Replace this with your actual data.",
+    "created_at": "2023-01-15T12:00:00Z",
+    "updated_at": "2023-03-20T15:30:00Z",
+    "pushed_at": "2023-03-20T15:30:00Z",
+    "homepage": "https://example.com",
+    "size": 5120,
+    "stargazers_count": 12,
+    "watchers_count": 5,
+    "forks_count": 3,
+    "language": "TypeScript",
+    "languages": {
+      "TypeScript": 15000,
+      "JavaScript": 5000,
+      "CSS": 3000,
+      "HTML": 2000
+    },
+    "image": "/placeholder.svg?height=400&width=800&text=Example%20Project",
+    "featured": true,
+    "visible": true,
+    "custom_description": "This is a custom description that overrides the GitHub description.",
+    "demo_url": "https://demo.example.com",
+    "tags": ["Next.js", "React", "Portfolio"]
+  }
+]
+
