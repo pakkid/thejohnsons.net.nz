@@ -6,7 +6,7 @@ import type { GitHubRepo } from "@/lib/types"
 import { Calendar, GitCommit, Code, Star, GitFork, ExternalLink, Eye } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
+// import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { motion, AnimatePresence } from "framer-motion"
 import { useAnimations } from "@/contexts/animation-context"
@@ -138,27 +138,13 @@ export default function ProjectModal({ repo, onClose }: ProjectModalProps) {
               >
                 <h3 className="text-lg font-semibold">Languages</h3>
                 {repo.languages && Object.keys(repo.languages).length > 0 ? (
-                  <div className="space-y-3">
+                  <div className="space-y-2">
                     {Object.entries(repo.languages).map(([language, bytes], index) => {
                       const percentage = totalBytes ? Math.round((bytes / totalBytes) * 100) : 0
                       return (
-                        <div key={language} className="space-y-1">
-                          <div className="flex justify-between text-sm">
-                            <span>{language}</span>
-                            <span>{percentage}%</span>
-                          </div>
-                          <Progress
-                            value={animationsEnabled ? 0 : percentage}
-                            className="h-2"
-                            // Animate the progress bar
-                            style={
-                              animationsEnabled
-                                ? {
-                                    animation: `progressAnimation 1s ease-out ${0.5 + index * 0.1}s forwards`,
-                                  }
-                                : undefined
-                            }
-                          />
+                        <div key={language} className="flex justify-between items-center text-sm">
+                          <span className="font-medium">{language}</span>
+                          <span className="text-muted-foreground">{percentage}%</span>
                         </div>
                       )
                     })}

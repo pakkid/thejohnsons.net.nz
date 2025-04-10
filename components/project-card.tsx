@@ -81,7 +81,7 @@ export default function ProjectCard({ repo, onClick, delay = 0 }: ProjectCardPro
   // If animations are disabled, render a regular card
   if (!animationsEnabled) {
     return (
-      <Card className="overflow-hidden cursor-pointer h-full flex flex-col group hover:shadow-lg" onClick={onClick}>
+      <Card className="overflow-hidden cursor-pointer h-full flex flex-col group hover:shadow-lg">
         {cardContent}
       </Card>
     )
