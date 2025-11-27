@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Error - 404</title>
+  <link rel="stylesheet" href="./404/style.css">
+
+</head>
+<body>
+
+  <main class="bsod container">
+    <h1 class="neg title"><span class="bg">Error - 404</span></h1>
+    <p>An error has occured, to continue:</p>
+    <p>* Return to our homepage.<br />
+    * Send us an e-mail about this error and try later.</p>
+    <nav class="nav">
+      <a href="./" class="link">home</a>&nbsp;|&nbsp;<a onclick="alertAndRedirect()" href="#" class="link">webmaster</a>
+    </nav>
+  </main>
+  <script>
+    function alertAndRedirect() {
+        alert('Redirecting to console.\nClick "OK" to continue!'); // Show the alert
+        window.location.href = "./404/rick"; // Redirect to the URL
+    }
+  </script>
+  
+</body>
+</html>

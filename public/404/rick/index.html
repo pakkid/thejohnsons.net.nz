@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>access portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #button {
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        @media (max-width: 599px) {
+            #button {
+                width: 250px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            #button {
+                width: 200px;
+            }
+        }
+
+        .hidden {
+            opacity: 0;
+            display: none;
+        }
+
+		#rickVideo {
+			width: 100%;  
+			height: 100%;  
+			position: relative;  
+			z-index: 999;
+		}
+
+		#rickVideo:hover {
+			cursor: url(rick.cur), auto;
+		}
+
+        .rickroll-text {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            color: white;
+            font-size: 18px;
+            font-weight: 300;
+            z-index: 1000;
+        }
+    </style>
+<body cz-shortcut-listen="true">
+    <img src="button.png" alt="Click Me" id="button" onclick="startRickroll()">
+
+    <video id="rickVideo" class="hidden" loop="">
+        <source src="rick.mp4" type="video/mp4">
+    </video>
+
+    <div id="rickrollText" class="hidden rickroll-text">Lmao get rickrolled</div> 
+
+    <script>
+        function startRickroll() {
+            document.getElementById("button").classList.add("hidden");
+            document.getElementById("rickVideo").classList.remove("hidden");
+            document.getElementById("rickrollText").classList.remove("hidden");
+            document.getElementById("rickVideo").play();
+            document.title = "You're stupid! 🤦‍♂️"
+        }
+    </script>
+
+</body>
+</html>
