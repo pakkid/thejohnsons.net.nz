@@ -16,7 +16,7 @@ export default function AboutMe() {
     name: "Sebastian",
     title: "Full Stack Developer",
     location: "Auckland, NZ",
-    email: "pakkid@mail.thejohnsons.net.nz",
+    email: "pakkid@stuffandthings.cc",
     github: "pakkid",
     // linkedin: "yourlinkedin",
     bio: "Passionate developer with expertise in React, Next.js, and TypeScript. I love building user-friendly web applications and exploring new technologies.",
